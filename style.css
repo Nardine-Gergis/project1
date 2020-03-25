@@ -1,0 +1,16 @@
+.navbar-menu {
+    color: black;
+font-weight: bold;
+font-family: inherit;
+}
+.column{
+margin: 50px 0px 10px 10px ;
+padding: 25px;
+font-weight: 800;
+color:darkturquoise;
+}
+.description{
+    font-weight: 550;
+    color:#00a9da;
+    margin-top: 20px;
+}
