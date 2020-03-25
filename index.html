@@ -1,61 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fitplay</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.8.1/css/bulma.min.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script src="app.js"></script>
+  <title>FitPlay</title>
 </head>
-
 <body>
-    <div class="container-fluid">
-        <!--jumbotron-->
-        <div class="jumbotron jumbotron-fluid">
-            <div class="container">
-                <h1 class="display-4">Fitplay</h1>
-            </div>
-        </div>
-        <!--nav bar-->
-        <nav class="navbar navbar-dark bg-dark">
-            <a class="navbar-brand" href="#cardio">Cardio</a>
-            <a class="navbar-brand" href="#weightlifting">Weightlifting</a>
-            <a class="navbar-brand" href="#Yoga">Yoga</a>
-            <a class="navbar-brand" href="#Bodyweight">Bodyweight</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-        </nav>
-        <!--Cardio row-->
-        <div class="row" id="cardio">
-            <div class="col-md-8">
-
-            </div>
-            <div class="col-md-4">
-                <button type="button" class="btn btn-dark" id="cardiomusic">Dark</button>
-            </div>
-
-        </div>
-        <!--weightlifting row-->
-        <div class="row" id="weightlifting">
-
-        </div>
-        <!--yoga row-->
-        <div class="row" id="yoga">
-
-        </div>
-        <!--bodyweight row-->
-        <div class="row" id="bodyweight">
-
-        </div>
+  <!--Jumborton-->
+  <section class="hero is-primary">
+    <div class="hero-body">
+      <div class="container">
+        <h1 class="title">
+          FitPlay
+        </h1>
+        <h2 class="subtitle">
+          When Music come to your workout
+        </h2>
+      </div>
     </div>
-
+  </section>
+  <!--end of jumborton-->
+  <!--------------------------------->
+  <!--Navebar-->
+  <nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="">
+        <img src="fitplay.png" width="80" height="150">
+      </a>
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+        data-target="navbarBasicExample">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbarBasicExample" class="navbar-menu">
+      <div class="navbar-start">
+        <a class="navbar-item">
+          Home
+        </a>
+        <a class="navbar-item">
+          Cardio
+        </a>
+        <a class="navbar-item">
+          Weight Lifting
+        </a>
+        <a class="navbar-item">
+          Yoga
+        </a>
+        <a class="navbar-item">
+          Body-building
+        </a>
+      </div>
+    </div>
+  </nav>
+  <!--End of Navbar-->
+  <!--the sections-->
+  <div class="container is-widescreen">
+    <!--cardio section-->
+    <div class="columns">
+      <div class="column is-four-fifths" id="cardio"> Cardio
+        <ul class="description">
+          <li>Cardio is physical exercise of low to high intensity that depends primarily on the aerobic energy:</li>
+          <a href="#" id="Hiit">Hiit</a>
+            <br>
+          <a href="#" id="endurance">endurance</a>
+            <br>
+          <a href="#" id="zumba">zumba</a>
+            <br>
+          <a href="#" id="low">low intensity</a>
+        </ul>
+      </div>
+      <div class="column"> <button class="button is-link  column "><i class="fas fa-dumbbell "></i></button></div>
+    </div>
+    <!--weight-lifting section-->
+    <div class="columns">
+      <div class="column is-four-fifths" id="Weight-Lifting">Weight-Lifting
+        <ul class="description">
+          <li>Weight training is a type of strength training that uses weights for resistance. By creating a stress to
+            the muscles performed with free weights: </li>
+            <a href="#" id="chest">Chest and Tri</a>
+            <br>
+            <a href="#" id="back">Back and Bi</a>
+            <br>
+            <a href="#" id="legs">Legs</a>
+            <br>
+            <a href="#" id="abs">Abs</a>
+        </ul>
+      </div>
+      <div class="column"> <button class="button is-link column "><i class="fas fa-dumbbell"> </i></button></div>
+    </div>
+    <!--yoga secction-->
+    <div class="columns">
+      <div class="column is-four-fifths" id="Yoga">Yoga
+        <ul class="description">
+          <li>Yoga is a group of physical, mental, and spiritual practices or disciplines which originated in ancient
+            India:</li>
+            <a href="#" id="karma">Karma</a>
+            <br>
+            <a href="#" id="bhakti">Bhakti</a>
+            <br>
+            <a href="#" id="jnana">Jnana</a>
+            <br>
+            <a href="#" id="raja">Raja</a>
+        </ul>
+      </div>
+      <div class="column"> <button class="button is-link column "><i class="fas fa-dumbbell"></i></button></div>
+    </div>
+    <!--body-building-->
+    <div class="columns">
+      <div class="column is-four-fifths" id="body-building">Body-Building
+        <ul class="description">
+          <li>Bodybuilding is the process of developing muscle fibers through various techniques:</li>
+          <a href="#" id="calisthenics">Calisthenics</a>
+        </ul>
+      </div>
+      <div class="column"> <button class="button is-link column "><i class="fas fa-dumbbell"></i></button></div>
+    </div>
+    <!--footer-->
+ 
+<footer class="footer">
+            <div class="content has-text-centered">
+              <p>
+                @COPYRIGHTS OF FITPLAY
+              </p>
+            </div>
+          </footer>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
 </body>
-
 </html>
