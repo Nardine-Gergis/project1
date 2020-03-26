@@ -1,3 +1,6 @@
+.hero {
+    background-image: url("workout1.jpg");
+}
 .navbar-menu {
     color: black;
 font-weight: bold;
@@ -5,12 +8,57 @@ font-family: inherit;
 }
 .column{
 margin: 50px 0px 10px 10px ;
-padding: 25px;
+padding: 30px;
 font-weight: 800;
 color:darkturquoise;
+background-color: rgb(187, 224, 238);
 }
 .description{
     font-weight: 550;
     color:#00a9da;
-    margin-top: 20px;
+}
+.title1 {
+    font-size: 30px;
+}
+.navbar-item {
+ font-size: 20px;
+}
+.footer {
+    background-color: rgb(190, 226, 217);
+    margin-top: 40px;
+}
+li {
+    font-size: 20px;
+    padding-bottom: 10px;
+    color: rgb(53, 16, 114);
+
+}
+ol {
+    list-style-type: none;
+}
+ol li {
+    font-size: 16px;
+    color: #00a9da;
+}
+button {
+    padding: 20px;
+    background-color: rgb(152, 86, 218);
+    border: 2px solid white;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+footer div p {
+    padding-top: 10px;
+}
+footer {
+    height: 50px;
+}
+.title{
+    font-size: 50px;
+    color: rgb(41, 241, 14);
+}
+.subtitle {
+    font-size: 25px;
+    color:rgb(18, 238, 18);
 }

@@ -76,72 +76,72 @@ $(document).ready(function () {
 
         //event listener for endurance
        $("#endurance").on("click", function(){
-         youVideo("cardio");
+        // youVideo("cardio");
          var p2 = $("<p>").text("Endurance exercise includes activities that increase your breathing and heart rate such as walking, jogging, swimming, biking and jumping rope.")
          $(".endurance2").append(p2);
        })
        //event listener for hiit
        $("#Hiit").on("click", function(){
-        youVideo("hiit");
+       // youVideo("hiit");
         var p1 = $("<p>").text(" Exercises are performed with a high level of effort, or intensity, where it is thought that it will stimulate the body to produce an increase in muscular strength and size.")
         $(".hiit2").append(p1);
       })
       //event listener for low intensity cardio
       $("#low").on("click", function(){
-        youVideo("running");
+       // youVideo("running");
         var p3 = $("<p>").text("Low intensity cardio is aerobic exercise that is performed at 60 to 80 % of your maximum heart rate or your target heart rate.")
         $(".low2").append(p3);
       })
       //event listener for zumba
       $("#zumba").on("click", function(){
-        youVideo("dance workout");
+       // youVideo("dance workout");
         var p4 = $("<p>").text("Zumba routines incorporate interval training — alternating fast and slow rhythms — to help improve cardiovascular fitness.");
         $(".zumba2").append(p4);
       })
       //event listener for chest
       $("#chest").on("click", function(){
-        youVideo("chest workout");
+       // youVideo("chest workout");
       })
       //event listener for back
       $("#back").on("click", function(){
-        youVideo("back workout")
+       // youVideo("back workout")
       })
       //event listener for legs
       $("#legs").on("click", function(){
-        youVideo("leg workout")
+       // youVideo("leg workout")
       })
       //event listener for abs
       $("#abs").on("click", function(){
-        youVideo("abs workout")
+       // youVideo("abs workout")
       })
       //event listener for karma
       $("#karma").on("click", function(){
-        youVideo("karma yoga");
+       // youVideo("karma yoga");
         var kar = $("<p>").text("Karma yoga, also called Karma marga, is one of the three spiritual paths in Hinduism, one based on the - yoga of action. To a karma yogi, right action is a form of prayer. It is one of the paths in the spiritual practices of Hindus, others being Jnana yoga and Bhakti yoga");
-        $(".karma2").append(kar)
+       $(".karma2").append(kar)
       })
       //event listener for zumba
       $("#bhakti").on("click", function(){
-        youVideo("bhakti yoga");
+        //youVideo("bhakti yoga");
         var bha = $("<p>").text("The Sanskrit word bhakti comes from the root bhaj, which means - to adore or worship God. Bhakti yoga has been called - love for love's sake - and - union through love and devotion. Bhakti yoga, like any other form of yoga, is a path to self-realization, to having an experience of oneness with everything.");
         $(".bhakti2").append(bha);
       })
       //event listener for zumba
       $("#jnana").on("click", function(){
-        youVideo("jnana yoga");
+       // youVideo("jnana yoga");
         var jna = $("<p>").text('Jnana yoga, also known as Jnanamarga, is one of the several spiritual paths in Hinduism that emphasizes the "path of knowledge", also known as the "path of self-realization". ... The jnana yoga is a spiritual practice that pursues knowledge with questions such as "who am I, what am I" among others.');
         $(".jnana2").append(jna);
 
       })
       //event listener for zumba
       $("#raja").on("click", function(){
-        youVideo("raja yoga");
+       // youVideo("raja yoga");
         var raj = $("<p>").text("Raja Yoga is a study of the human mind, becoming aware of its habitual tendencies, and ultimately transcending identification with the body-mind-intellect complex through meditation to rest in the vast ocean of consciousness, which comprises it all.");
         $(".raja2").append(raj);
       })
       //event listener for zumba
       $("#calisthenics").on("click", function(){
-        youVideo("calisthenics workout")
+       // youVideo("calisthenics workout")
       })
 
         function exerciseinfo(){
