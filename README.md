@@ -29,7 +29,11 @@ The team used the google developer tools to be able to run test on the function 
 
 <h2>Authors</h2>
 Worked on by the amazing team CodeSlappers which include
+<br>
 -Steven Leonardo
+<br>
 -Yoom Davidson
+<br>
 -Shivan Desai
+<br>
 -Nardine Gergis
