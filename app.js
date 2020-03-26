@@ -16,27 +16,31 @@ $(document).ready(function () {
         console.log("https://www.youtube.com/watch?v="+response.items[0].id.videoId)
         var a = $("<a>").attr("href", "https://www.youtube.com/watch?v="+response.items[0].id.videoId)
 
-    
+        //Redirects the user to a new page
         window.open("https://www.youtube.com/watch?v="+response.items[0].id.videoId, "_blank")
  
      });
     }
-
+    //second api key and URL
     var key2 = "d2b6366945a9a0c064fc4b1be7fadb4a932e099f";
     var queryURL3 = "https://wger.de/api/v2/exerciseinfo/?page=3";
+    //Call for the second Api
     $.ajax({
         url: queryURL3,
         method: "GET"
     }).then(function (response) {
         console.log(response)
+        //Setting specific info into a local variable
         var number8 = response.results[8].description;
         var number10 = response.results[10].description;
         var number2 = response.results[2].description;
         var number15 = response.results[15].description;
         var p8 = number8;
+        //creating a p tag
         var p10 = $("<p>").text(number10);
         var p2 = number2;
         var p15 = number15;
+        //event listener which prevent page refresh but also append info
         $(".des8").on("click", function() {
           event.preventDefault();
           $(".des8").append(p8);
@@ -55,17 +59,18 @@ $(document).ready(function () {
         })
         
     });
-
+    //second call for a different page on the second api
     var queryURL4 = "https://wger.de/api/v2/exerciseinfo/?page=4";
+    // call out to the Html
     $.ajax({
         url: queryURL4,
         method: "GET"
     }).then(function (response) {
         console.log(response)
-        //var number12 = response.results[12].description;
+        //set info from the object into a local variable
         var number18 = response.results[18].description;
-        //var p12 = number12;
         var p18 = number18;
+        //event listener
         $(".des18").on("click", function() {
           event.preventDefault();
           $(".des18").append(p18);
@@ -116,23 +121,24 @@ $(document).ready(function () {
       //event listener for karma
       $("#karma").on("click", function(){
         youVideo("karma yoga");
+        //Creates a p tage and then appends the text onto the page
         var kar = $("<p>").text("Karma yoga, also called Karma marga, is one of the three spiritual paths in Hinduism, one based on the - yoga of action. To a karma yogi, right action is a form of prayer. It is one of the paths in the spiritual practices of Hindus, others being Jnana yoga and Bhakti yoga");
        $(".karma2").append(kar)
       })
-      //event listener for zumba
+      //event listener for bhakti yoga
       $("#bhakti").on("click", function(){
         youVideo("bhakti yoga");
         var bha = $("<p>").text("The Sanskrit word bhakti comes from the root bhaj, which means - to adore or worship God. Bhakti yoga has been called - love for love's sake - and - union through love and devotion. Bhakti yoga, like any other form of yoga, is a path to self-realization, to having an experience of oneness with everything.");
         $(".bhakti2").append(bha);
       })
-      //event listener for zumba
+      //event listener for jnana yoga
       $("#jnana").on("click", function(){
         youVideo("jnana yoga");
         var jna = $("<p>").text('Jnana yoga, also known as Jnanamarga, is one of the several spiritual paths in Hinduism that emphasizes the "path of knowledge", also known as the "path of self-realization". ... The jnana yoga is a spiritual practice that pursues knowledge with questions such as "who am I, what am I" among others.');
         $(".jnana2").append(jna);
 
       })
-      //event listener for zumba
+      //event listener for raja yoga
       $("#raja").on("click", function(){
        youVideo("raja yoga");
         var raj = $("<p>").text("Raja Yoga is a study of the human mind, becoming aware of its habitual tendencies, and ultimately transcending identification with the body-mind-intellect complex through meditation to rest in the vast ocean of consciousness, which comprises it all.");
@@ -142,6 +148,7 @@ $(document).ready(function () {
       $("#calisthenics").on("click", function(){
        youVideo("calisthenics workout")
       })
+      //event listener that will open a new tab to the target link
       $("#hiphop").on("click", function(){
           window.open("https://www.youtube.com/watch?v=l0U7SxXHkPY&list=PLetgZKHHaF-Zq1Abh-ZGC4liPd_CV3Uo4", "_blank")
       })
